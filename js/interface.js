@@ -34,3 +34,13 @@ function updateSquares(){
     })
 }
 
+function restart(){
+    if(board = ['','','','','','','','','']){
+        playerTime = 0
+        gameOver = false
+        let squares = document.querySelectorAll(".square")
+        squares.forEach((square)=>{
+        square.innerHTML = ''
+    })
+  }
+}
