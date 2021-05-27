@@ -11,10 +11,15 @@ function handleClick(event){
     let position = square.id
 
     if(handleMove(position)){        
-
-        setTimeout(()=>{
-            alert("O jogo acabou , o vencedor foi " + playerTime)
-        }, 10)
+        if(playerTime == 0){
+            setTimeout(()=>{
+                alert("O jogo acabou , o vencedor foi " + playerOne)
+            }, 10)
+        }else{
+            setTimeout(()=>{
+                alert("O jogo acabou , o vencedor foi " + playerTwo)
+            }, 10)
+        }      
 
     }
 
